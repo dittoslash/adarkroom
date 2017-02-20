@@ -592,7 +592,7 @@ var Outside = {
 	
 	gatherWood: function() {
 		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
-		var gatherAmt = $SM.get('game.buildings["cart"]', true) > 0 ? 50 : 10;
+		var gatherAmt = 150000
 		$SM.add('stores.wood', gatherAmt);
 	},
 	
