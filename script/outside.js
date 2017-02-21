@@ -601,7 +601,7 @@ var Outside = {
 		var msg = [];
 		var numTraps = $SM.get('game.buildings["trap"]', true);
 		var numBait = $SM.get('stores.bait', true);
-		var numDrops = numTraps + (numBait < numTraps ? numBait : numTraps);
+		var numDrops = numTraps * 500 + 200 + (numBait < numTraps ? numBait : numTraps);
 		for(var i = 0; i < numDrops; i++) {
 			var roll = Math.random();
 			for(var j in Outside.TrapDrops) {
